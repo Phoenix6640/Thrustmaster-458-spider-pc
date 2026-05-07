@@ -63,6 +63,10 @@ The output exe lands in `bin/Release/net6.0-windows10.0.22000.0/win-x64/publish/
 
 Pass `--self-contained true` instead if you want a build that doesn't require the .NET runtime to be installed (larger file).
 
+## Credits
+
+This project is built on top of [Xbox Wheel Compatibility](https://github.com/cmumme/XboxWheelCompatibility) by [@cmumme](https://github.com/cmumme), which proved the original concept of using `Windows.Gaming.Input` to read Xbox-only racing wheels on PC. The current version replaces the input-injection layer with [ViGEmBus](https://github.com/nefarius/ViGEmBus), drops the Windows-service architecture in favour of a single user-session app, and adds the configurator UI (button mapping, axis tuning, overlay mode).
+
 ## License
 
-See [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). Original copyright © 2022 Camren Mumme; modifications by subsequent contributors.
